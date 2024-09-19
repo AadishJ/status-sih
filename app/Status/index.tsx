@@ -3,17 +3,18 @@
 import React, { useState } from 'react';
 import Image from 'next/image'; // Import Image component from next/image
 import AppSub from '../../images/application-submission.png';
-import Approved from '../../images/Approved.jpg';
+import Verify from '../../images/verify.jpg';
 import Prelim from '../../images/prelim.jpg';
 import Detail from '../../images/detail.jpg';
 import Comm from '../../images/comm.jpg';
-
+import Approve from "../../images/Approved.jpg"
 const statusStages = [
   { label: 'Application Submission', id: 1, image: AppSub },
-  { label: 'Document Verification', id: 2, image: Approved },
+  { label: 'Document Verification', id: 2, image: Verify },
   { label: 'Preliminary Review', id: 3, image: Prelim },
   { label: 'Detailed Review', id: 4, image: Detail },
-  { label: 'Community Review Approval', id: 5, image: Comm },
+  { label: 'Committe Review Approval', id: 5, image: Comm },
+  {label: 'Application Approved', id: 6, image: Approve}
 ];
 
 export default function StatusTracking() {
